@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    let loginForm = document.querySelector("form");
+    let loginForm = document.getElementById("formLogin");
 
     loginForm.addEventListener("submit", function (event) {
 
         event.preventDefault();
 
-        let email = document.getElementById("email").value;
-        let password = document.getElementById("password").value;
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
 
         let userJSON = localStorage.getItem(email);
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href = "home.html";
             }
             else {
-                alert("Password Galat Hai Jee!");
+                alert("Password Galat Hai Jee");
             }
         }
 

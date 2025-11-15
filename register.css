@@ -1,64 +1,6 @@
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.form {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.signup-form {
-    background-color: #5cb85c;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.signup-form:hover {
-    background-color: #4cae4c;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 500;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}  */
-
-/* --- Body Styling --- */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    /* Center the form in the middle of the viewport */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,32 +8,27 @@ body {
     margin: 0;
 }
 
-/* --- Form Container Styling (Targeting #signup-form ID) --- */
 #signup-form {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
-    /* Stack elements vertically and add space between them */
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* --- Input Fields Styling (Targeting by type) --- */
 input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding doesn't increase total width */
+    box-sizing: border-box; 
     font-size: 16px;
 }
 
-/* --- Sign Up Button Styling (Targeting #sign-up ID) --- */
-/* NOTE: I'm targeting the ID #sign-up from your HTML instead of the class .signup-form */
 #sign-up {
     background-color: #5cb85c;
     color: white;
@@ -105,19 +42,16 @@ input[type="password"] {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for the Sign Up button */
 #sign-up:hover {
     background-color: #4cae4c;
 }
 
-/* --- Anchor Tag (Login Link) Styling --- */
 a {
     color: #007bff;
     text-decoration: none;
     text-align: center;
     font-weight: 500;
     transition: color 0.3s ease, text-decoration 0.3s ease;
-    /* Ensure the link is centered under the button */
     display: block; 
 }
 

@@ -9,13 +9,29 @@
 </head>
 
 <body>
-    
+
     <form id="formLogin">
         <input type="text" id="email" placeholder="Enter Email Here" required>
         <input type="password" id="password" placeholder="Enter Password Here" required>
         <button type="submit" id="login-btn">Login</button>
         <a href="firstRegister.html">Register Here</a>
     </form>
+
+
+    <script>
+        let loggedInUser = localStorage.getItem('loggedInUser');
+
+        if (loggedInUser) {
+            window.location.href = 'page.html';
+        }
+
+        let localStorageKeys = Object.keys(localStorage).filter(key => key !== 'loggedInUser');
+
+        if (localStorageKeys.length === 0) {
+            window.location.href = 'firstRegister.html';
+        }
+
+    </script>
 
     <script src="login.js"></script>
 </body>

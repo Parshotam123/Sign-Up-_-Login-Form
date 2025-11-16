@@ -68,6 +68,13 @@
     </nav>
 
     <script>
+
+        let loggedInUser = localStorage.getItem('loggedInUser');
+
+        if (!loggedInUser) {
+            window.location.href = 'firstRegister.html';
+        }
+
         function logout() {
             localStorage.removeItem('loggedInUser');
             window.location.href = 'login.html';

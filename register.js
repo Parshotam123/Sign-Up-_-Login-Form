@@ -15,10 +15,6 @@ signUp.addEventListener("submit", function (event) {
         alert("Password " + passLength + " characters ka hona chahiye.");
     }
 
-    if (localStorage.getItem(emailValue)) {
-        alert("This email is already registered. Please log in instead.");
-    }
-
     let user = {
         email: emailValue,
         password: passwordValue, 

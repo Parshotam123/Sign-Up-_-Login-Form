@@ -17,8 +17,11 @@
             display: flex;
             align-items: center;
             gap: 30px;
-            background-color: #ffffff;
-            padding: 5px 5px;
+            background-color: #f2eded;
+            padding: 0px 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
             width: 100%;
             box-sizing: border-box;
         }
@@ -26,6 +29,8 @@
         nav a {
             color: #4a5568;
             text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
             font-size: 16px;
             font-weight: 500;
             padding: 5px 0;
@@ -33,12 +38,14 @@
         }
 
         nav a:hover {
-            color: #3b82f6;
+            /* color: #3b82f6; */
+            color: orange;
         }
 
         #logout-btn {
             margin-left: auto;
-            background-color: #ef4444;
+            /* background-color: #ef4444; */
+            background-color: orange;
             color: white;
             padding: 8px 16px;
             border: none;
@@ -50,23 +57,67 @@
         }
 
         #logout-btn:hover {
-            background-color: #dc2626;
+            background-color: #7a692e;
             transform: translateY(-1px);
+        }
+
+        div {
+            background-image: url(./3d-laptop-software-development-banner-vector-46322083.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 550px;
+        }
+
+        .btn2 {
+            background-color: orange;
+            margin-left: 50px;
+            border: none;
+            padding: 8px 22px 8px 22px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+
+        h1 {
+            margin-left: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* color: aliceblue; */
+            
+            color: rgb(220, 189, 131);
+        }
+
+        p {
+            margin-left: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* color: aliceblue; */
+            color: rgb(224, 191, 129);
         }
     </style>
 </head>
 
 <body>
 
-    <nav><a href="#">Home</a>
-        <a href="#">Product</a>
-        <a href="#">Contact</a>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">PRICING</a>
+        <a href="#">BLOG</a>
         <a href="#">FAQS</a>
         <button id="logout-btn">
             Log Out
         </button>
     </nav>
 
+
+    <div>
+        <br><br><br><br><br><br>
+        <h1>Small Business <br>Cash-flow management <br>made easy...Real easy!</h1>
+        <br>
+        <p>Manage your day-to-day cash-flow and <br>get advances on your future payments with ease</p>
+        <br><br>
+        <button class="btn2">TRY NOW FOR FREE</button>
+    </div>
+
+    <!-- JavaScript -->
     <script>
 
         let loggedInUser = localStorage.getItem('loggedInUser');
@@ -77,7 +128,7 @@
 
         function logout() {
             localStorage.removeItem('loggedInUser');
-            window.location.href = 'login.html';
+            window.location.href = 'sign.html';
         }
 
         document.addEventListener('DOMContentLoaded', function () {

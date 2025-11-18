@@ -22,13 +22,13 @@
         let loggedInUser = localStorage.getItem('loggedInUser');
 
         if (loggedInUser) {
-            window.location.href = 'page.html';
+            window.location.href = 'index.html';
         }
 
         let localStorageKeys = Object.keys(localStorage).filter(key => key !== 'loggedInUser');
 
         if (localStorageKeys.length === 0) {
-            window.location.href = 'firstRegister.html';
+            window.location.href = 'sign.html';
         }
 
     </script>

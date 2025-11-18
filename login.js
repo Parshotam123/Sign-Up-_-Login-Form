@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (parsedUser.password === password) {
                 localStorage.setItem("loggedInUser", JSON.stringify(parsedUser));
                 alert("Login Ho Gaya Jee!");
-                window.location.href = "page.html";
+                window.location.href = "index.html";
             }
             else {
                 alert("Password Galat Hai Jee");
